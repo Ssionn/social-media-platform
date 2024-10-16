@@ -11,10 +11,9 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-jetbrains">
-    {{--  To be determined.  --}}
-    <h1 class="text-xl font-bold">
-        This is a test.
-    </h1>
+<body class="font-jetbrains bg-[#232226]">
+    <main class="flex flex-col justify-center items-center mt-60">
+        {{ $slot }}
+    </main>
 </body>
 </html>
