@@ -12,6 +12,15 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-jetbrains bg-[#232226]">
-    {{ $slot }}
+    <script>0</script>
+    <div class="flex min-h-screen">
+        @include('layouts.navigation')
+
+        <main class="text-white p-6 w-full">
+            {{ $slot }}
+        </main>
+
+        @include('layouts.search')
+    </div>
 </body>
 </html>
